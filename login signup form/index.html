@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>login signup form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+
+    <script src='script.js'></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="heading">
+                <h3>Sign In</h3>
+            </div>
+            <div class="button"> <button>Sign in using Open Id Connect</button> </div>
+            <hr>
+            <div class="or">
+                <p>or sign in with your email</p>
+            </div>
+            <div class="input_text "> <input type="text" placeholder="john@email.com" name="email"> <span>Email</span>
+                <small class="email_warn d-none"><i class="fa fa-warning"></i>Please enter a valid email
+                    address.</small> </div>
+            <div class="input_text passwo"> <input autocomplete='chrome-off' class="input-group" id="password_input"
+                    type="password" placeholder="Password"> <span>Password</span> <i id="password_eye"
+                    class="fa fa-eye-slash"></i> </div>
+            <ul class="strength-list">
+                <li> <span class="loweruppercase list-group"> <i class="fa fa-circle"></i> <span>Lowercase
+                            uppercase</span> </span> </li>
+                <li> <span class="list-group numbercase"> <i class="fa fa-circle"></i> <span>Number (0-9)</span> </span>
+                </li>
+                <li> <span class="list-group specialcase"> <i class="fa fa-circle"></i> <span>Special
+                            Characters(!#@$%*)</span> </span> </li>
+                <li> <span class="list-group numcharacter"> <i class="fa fa-circle"></i> <span>8 Characters</span>
+                    </span> </li>
+            </ul>
+            <div class="last_btn"> <button class="sign_in">Sign in</button> </div>
+        </div>
+    </div>
+</body>
+
+</html>
